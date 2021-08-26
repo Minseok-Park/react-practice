@@ -1,38 +1,63 @@
-.App {
+/*navbar*/
+.navbar {
+  width: 100%;
+  background-color: pink;
+  padding: 20px;
+  padding-left: 40px;
+  font-size: 2rem;
+}
+.navbar-icon {
+  color: green;
+  padding-right: 0.5rem;
+}
+.navbar-title {
+  padding-right: 0.5rem;
+}
+.navbar-count {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background-color: springgreen;
+  color: purple;
   text-align: center;
+  border-radius: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* habit */
+button {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.habit {
+  font-size: 2rem;
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.habit-count {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background-color: seagreen;
+  text-align: center;
+  border-radius: 50%;
   color: white;
+  margin-left: 0.5rem;
 }
-
-.App-link {
-  color: #61dafb;
+.habit-button {
+  font-size: 2.5rem;
+  transition: transform 0.2s ease;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.habit-button:hover {
+  transform: scale(1.1);
+}
+.button-plus,
+.button-minus {
+  color: orange;
+}
+.button-delete {
+  color: brown;
 }
